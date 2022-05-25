@@ -86,6 +86,7 @@ const artists = [
             "https://upload.wikimedia.org/wikipedia/commons/0/03/Eiza_Gonzalez_for_Vogue_2021_4.jpg",
           wiki_url: "https://en.wikipedia.org/wiki/Eiza_Gonz%C3%A1lez",
         },
+        
                 {
           id: "A9",
           first_name: "Benedict",
