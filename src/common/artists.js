@@ -1,112 +1,124 @@
 const artists = [
-    {
-      id: "A1",
-      first_name: "Marlon",
-      last_name: "Brando",
-      role_type: "ACTOR",
-      profile_description:
-        "Marlon Brando Jr. was an American actor and film director. He is credited with bringing realism to film acting and helping to popularize the Stanislavski system of acting having studied with Stella Adler in the 1940s. Regarded for his cultural influence on 20th century film, Brando's Academy Award-winning performances include that of Terry Malloy in On the Waterfront (1954) and Don Vito Corleone in The Godfather (1972). Brando was an activist for many causes, notably the civil rights movement and various Native American movements.",
-      profile_url:
-        "https://upload.wikimedia.org/wikipedia/commons/e/e5/Marlon_Brando_%28cropped%29.jpg",
-      wiki_url: "https://en.wikipedia.org/wiki/Marlon_Brando",
-    },
-    {
-      id: "A2",
-      first_name: "Al",
-      last_name: "Pacino",
-      role_type: "ACTOR",
-      profile_description:
-        "Alfredo James Pacino is an American actor and filmmaker. Pacino has had a career spanning over five decades, during which time he has received numerous accolades and honors both competitive and honorary, among them an Academy Award, two Tony Awards, two Primetime Emmy Awards, a British Academy Film Award, four Golden Globe Awards, the Lifetime Achievement Award from the American Film Institute, the Golden Globe Cecil B. DeMille Award, and the National Medal of Arts. He is also one of few performers to have won a competitive Oscar, an Emmy, and a Tony Award for acting, dubbed the 'Triple Crown of Acting'.",
-      wiki_url: "https://en.wikipedia.org/wiki/Pedro_Pascal",
-    },
-    {
-      id: "A3",
-      first_name: "Christian",
-      last_name: "Bale",
-      role_type: "ACTOR",
-      profile_description:
-        "Christian Charles Philip Bale is an English actor and producer. He has starred both in blockbuster films and smaller projects from independent producers and art houses. Born in Haverfordwest, Wales, to English parents, he first caught the public eye at the age of 13, when he was cast in the starring role of Steven Spielberg's Empire of the Sun. After a string of semi-successful feature films, he portrayed Wall Street banker and serial killer Patrick Bateman in American Psycho to widespread critical acclaim. His reputation for going great lengths to portray characters in films was first noted in the psychological thriller The Machinist, where he lost 28.5 kg to play the main lead. Within six months he gained 45 kg to star as Batman in Christopher Nolan's Batman Begins",
-      profile_url:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Christian_Bale_2014_%28cropped%29.jpg/1024px-Christian_Bale_2014_%28cropped%29.jpg",
-      wiki_url: "https://en.wikipedia.org/wiki/Christian_Bale",
-    },
-    {
-      id: "A4",
-      first_name: "Heath",
-      last_name: "Ledger",
-      role_type: "ACTOR",
-      profile_description:
-        "Heath Andrew Ledger was an Australian actor and director. After performing roles in several Australian television and film productions during the 1990s, Ledger left for the United States in 1998 to further develop his film career. His work comprised nineteen films, including Brokeback Mountain and The Dark Knight. Ledger received numerous posthumous accolades for his critically acclaimed performance in the film The Dark Knight, including the Academy Award for Best Supporting Actor and Best Actor International Award at the 2008 Australian Film Institute Awards",
-      profile_url:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Heath_Ledger_%28Berlin_Film_Festival_2006%29_revised.jpg/1024px-Heath_Ledger_%28Berlin_Film_Festival_2006%29_revised.jpg",
-      wiki_url: "https://en.wikipedia.org/wiki/Heath_Ledger",
-    },
-    {
-      id: "A5",
-      first_name: "Leonardo",
-      last_name: "DiCaprio",
-      role_type: "ACTOR",
-      profile_description:
-        "Leonardo Wilhelm DiCaprio is an American actor and film producer. DiCaprio began his career by appearing in television commercials in the late 1980s. He next had recurring roles in various television series, such as the soap opera Santa Barbara and the sitcom Growing Pains. DiCaprio's portrayals of Howard Hughes in The Aviator (2004) and Hugh Glass in The Revenant won him the Golden Globe Award for Best Actor Ã¢â‚¬â€œ Motion Picture Drama. His performance as Jordan Belfort in The Wolf of Wall Street won him the Golden Globe award for Best Actor Ã¢â‚¬â€œ Motion Picture Musical or Comedy. He also won the Academy Award for Best Actor and BAFTA Award for his performance in The Revenant. DiCaprio is the founder of his own production company, Appian Way Productions.",
-      profile_url:
-        "https://upload.wikimedia.org/wikipedia/commons/3/3f/Leonardo_DiCaprio_visited_Goddard_Saturday_to_discuss_Earth_science_with_Piers_Sellers_%2826105091624%29_cropped.jpg",
-      wiki_url: "https://en.wikipedia.org/wiki/Leonardo_DiCaprio",
-    },
-    {
-      id: "A6",
-      first_name: "Joseph",
-      last_name: "Gordon-Levitt",
-      role_type: "ACTOR",
-      profile_description:
-        "Joseph Leonard Gordon-Levitt is an American actor, filmmaker, singer, and entrepreneur. As a child, Gordon-Levitt appeared in many films and TV series. He took a break from acting to study at Columbia University, but dropped out in 2004 to pursue acting again. He has since starred in  films like (500) Days of Summer, Inception, The Dark Knight Rises, G.I. Joe: The Rise of Cobra and others. For his leading performances in (500) Days of Summer and 50/50, he was nominated for the Golden Globe Award for Best Actor Ã¢â‚¬â€œ Motion Picture Musical or Comedy.",
-      profile_url:
-        "https://upload.wikimedia.org/wikipedia/commons/7/7d/Joseph_Gordon-Levitt_2013.jpg",
-      wiki_url: "https://en.wikipedia.org/wiki/Joseph_Gordon-Levitt",
-    },
-    {
-      id: "A7",
-      first_name: "Matthew",
-      last_name: "McConaughey",
-      role_type: "ACTOR",
-      profile_description:
-        "Matthew David McConaughey is an American actor, producer, model, writer and director. McConaughey achieved ample success in 2013 and 2014. In 2013, McConaughey portrayed Ron Woodroof, a cowboy diagnosed with AIDS in the biographical film Dallas Buyers Club, which earned him the Academy Award, Critics' Choice Movie Award, Golden Globe Award, and Screen Actors Guild Award, all for Best Actor, among other awards and nominations. In 2014, he starred as Rust Cohle in the first season of HBO's crime drama anthology series True Detective, for which he won the Critics' Choice Television Award and TCA Award, and was nominated for the Primetime Emmy Award, Golden Globe Award, and Screen Actors Guild Award.",
-      profile_url:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Matthew_McConaughey_-_Goldene_Kamera_2014_-_Berlin.jpg/1024px-Matthew_McConaughey_-_Goldene_Kamera_2014_-_Berlin.jpg",
-      wiki_url: "https://en.wikipedia.org/wiki/Matthew_McConaughey",
-    },
-    {
-      id: "A8",
-      first_name: "Anne",
-      last_name: "Hathaway",
-      role_type: "ACTRESS",
-      profile_description:
-        "Anne Jacqueline Hathaway is an American actress and singer. One of the world's highest-paid actresses in 2015, she has received multiple awards, including an Academy Award, a Golden Globe, a British Academy Film Award, and an Emmy. Her films have earned $6.4 billion worldwide, and she appeared in the Forbes Celebrity 100 in 2009.",
-      profile_url:
-        "https://upload.wikimedia.org/wikipedia/commons/b/bd/Anne_Hathaway_in_2017.png",
-      wiki_url: "https://en.wikipedia.org/wiki/Anne_Hathaway",
-    },
-    {
-      id: "A9",
-      first_name: "Rajkummar",
-      last_name: "Rao",
-      role_type: "ACTOR",
-      profile_description:
-        "Rajkummar Rao, also known as Rajkumar Yadav, is an Indian actor. He has established a career in Hindi cinema and is the recipient of several awards, including a National Film Award, three Filmfare Awards, and an Asia Pacific Screen Award. He is cited in the media as one of the most talented actors of his generation.",
-      profile_url:
-        "https://en.wikipedia.org/wiki/Rajkummar_Rao#/media/File:Rajkummar_Rao_World_Premiere_Newton_Zoopalast_Berlinale_2017_02.jpg",
-      wiki_url: "https://en.wikipedia.org/wiki/Rajkummar_Rao",
-    },
-    {
-      id: "A10",
-      first_name: "KayKay",
-      last_name: "Menon",
-      role_type: "ACTOR",
-      profile_description:
-        "Kay Kay Menon is an Indian film, stage and television actor who works predominantly in Hindi cinema, and also in Gujarati, Tamil and Telugu cinema. He has also won the award for best actor for the film Shoonya from Festival of Arab and Asian cinema",
-      profile_url:
-        "https://upload.wikimedia.org/wikipedia/commons/a/ac/Kay_Kay_Menon_at_libas_store.jpg",
-      wiki_url: "https://en.wikipedia.org/wiki/Kay_Kay_Menon",
-    },
+            {
+          id: "A1",
+          first_name: "Daniel",
+          last_name: "Craig",
+          role_type: "ACTOR",
+          profile_description:
+            "He was born Daniel Wroughton Craig on March 2, 1968, at 41 Liverpool Road, Chester, Cheshire, England. His father, Timothy John Wroughton Craig, was a merchant seaman turned steel erector, and then became landlord of the Ring O'Bells pub in Frodsham, Cheshire. His mother, Carol Olivia (Williams), was an art teacher. Craig has English, as well as Irish, Scottish and Welsh, ancestry. His parents split up in 1972, and young Daniel was raised with his older sister, Lea, in Liverpool, then in Hoylake, Wirral, in the home of his mother. His interest in acting was encouraged by visits to the Liverpool Everyman Theatre arranged by his mother. From the age of six, Craig started acting in school plays, making his debut in the Frodsham Primary School production of Oliver!, and his mother was the driving force behind his artistic aspirations. The first Bond movie he ever saw at the cinema was Roger Moores Live and Let Die (1973); young Daniel Craig saw it with his father, so it took a special place in his heart. He was also a good athlete and was a rugby player at Hoylake Rugby Club",
+          profile_url:
+            "https://upload.wikimedia.org/wikipedia/commons/7/7f/Daniel_Craig_-_Film_Premiere_%22Spectre%22_007_-_on_the_Red_Carpet_in_Berlin_%2822387409720%29_%28cropped%29.jpg",
+          wiki_url: "https://en.wikipedia.org/wiki/Daniel_Craig",
+        },
+        {
+          id: "A2",
+          first_name: "Léa",
+          last_name: "Seydoux",
+          role_type: "ACTOR",
+          profile_description:
+            "French actress Léa Seydoux was born in 1985 in Paris, France, to Valérie Schlumberger, a philanthropist, and Henri Seydoux, a businessman. Her grandfather, Jérôme Seydoux, is chairman of Pathé, and her father is a great-grandson of businessman and inventor Marcel Schlumberger (her mother also descends from the Schlumberger family). ",
+          profile_url:
+            "https://upload.wikimedia.org/wikipedia/commons/6/6d/L%C3%A9a_Seydoux_Cannes_2016.jpg",
+          wiki_url: "https://en.wikipedia.org/wiki/L%C3%A9a_Seydoux",
+        },
+                {
+          id: "A3",
+          first_name: "Timothée",
+          last_name: "Chalamet",
+          role_type: "ACTOR",
+          profile_description:
+            "Timothée Hal Chalamet (English: /ˈtɪməθi ˈʃæləmeɪ/;[2][3] French: [timɔte ʃalamɛ]; born December 27, 1995) is an American actor. He has received several accolades, including nominations for an Academy Award, two Golden Globe Awards, and three BAFTA Film Awards. Born and raised in New York City, Chalamet began his career on the stage and in television productions, appearing in the drama series Homeland in 2012. Two years later, he made his feature film debut in the comedy-drama Men, Women & Children and appeared in Christopher Nolan's science-fiction film Interstellar. Chalamet came into international attention with the lead role of a lovestruck teenager in Luca Guadagnino's coming-of-age film Call Me by Your Name (2017), earning him a nomination for the Academy Award for Best Actor. He went on to have supporting roles in Greta Gerwig's films Lady Bird (2017) and Little Women (2019), and took on starring roles as Nic Sheff in the drama Beautiful Boy (2018) and as Paul Atreides in Denis Villeneuve's science fiction film Dune (2021)",
+          profile_url:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Timoth%C3%A9e_Chalamet_2017_Berlinale.jpg/800px-Timoth%C3%A9e_Chalamet_2017_Berlinale.jpg",
+          wiki_url: "https://en.wikipedia.org/wiki/Timoth%C3%A9e_Chalamet",
+        },
+        {
+          id: "A4",
+          first_name: "Rebecca",
+          last_name: "Ferguson",
+          role_type: "ACTOR",
+          profile_description:
+            "Rebecca Louisa Ferguson Sundström (born 19 October 1983) is a Swedish actress.[1][2] She began her acting career with the Swedish soap opera Nya tider (1999–2000) and went on to star in the slasher film Drowning Ghost (2004). She came to international prominence with her portrayal of Elizabeth Woodville in the British television miniseries The White Queen (2013), for which she was nominated for a Golden Globe for Best Actress in a Miniseries or Television Film.",
+          profile_url: "https://upload.wikimedia.org/wikipedia/commons/b/b3/Rebecca_Ferguson_in_2018.jpg",
+          wiki_url: "https://en.wikipedia.org/wiki/Rebecca_Ferguson",
+        },
+                {
+          id: "A5",
+          first_name: "Ralph",
+          last_name: "Fiennes",
+          role_type: "ACTOR",
+          profile_description:
+            "Ralph Nathaniel Twisleton-Wykeham-Fiennes[a] (/ˈreɪf ˈfaɪnz/ RAYF FYNZ;[2] born 22 December 1962) is an English actor, film producer and director. A Shakespeare interpreter, he first achieved success onstage at the Royal National Theatre. He made his film debut playing Heathcliff in Emily Brontë's Wuthering Heights (1992). Fiennes's portrayal of Nazi war criminal Amon Göth in Schindler's List (1993) earned him nominations for the Academy Award for Best Supporting Actor and Golden Globe Award for Best Supporting Actor, and he won the BAFTA Award for Best Actor in a Supporting Role. His performance as Count Almásy in The English Patient (1996) garnered him a second Academy Award nomination, this time for Best Actor, as well as BAFTA and Golden Globe nominations.",
+          profile_url:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Ralph_Fiennes_from_%22The_White_Crow%22_at_Opening_Ceremony_of_the_Tokyo_International_Film_Festival_2018_%2831747095048%29.jpg/800px-Ralph_Fiennes_from_%22The_White_Crow%22_at_Opening_Ceremony_of_the_Tokyo_International_Film_Festival_2018_%2831747095048%29.jpg",
+          wiki_url: "https://en.wikipedia.org/wiki/Ralph_Fiennes",
+        },
+        {
+          id: "A6",
+          first_name: "Gemma",
+          last_name: "Arterton",
+          role_type: "ACTOR",
+          profile_description:
+            "Gemma Christina Arterton[1] (born 2 February 1986)[2] is an English actress and producer.[3] After her stage debut in Shakespeare's Love's Labour's Lost at the Globe Theatre (2007), Arterton made her feature film debut in the comedy St Trinian's (2007). She portrayed Bond Girl Strawberry Fields in the James Bond film Quantum of Solace (2008), a performance which won her an Empire Award for Best Newcomer.",
+          profile_url:
+            "https://upload.wikimedia.org/wikipedia/commons/c/c0/Gemma_Arterton_Toronto_2014.jpg",
+          wiki_url: "https://en.wikipedia.org/wiki/Gemma_Arterton",
+        },
+                {
+          id: "A7",
+          first_name: "Vin",
+          last_name: "Diesel",
+          role_type: "ACTOR",
+          profile_description:
+            "Mark Sinclair (born July 18, 1967), known professionally as Vin Diesel, is an American actor and producer. One of the world's highest-grossing actors, he is best known for playing Dominic Toretto in the Fast & Furious franchise. Diesel began auditioning for roles in the early 1990s but struggled to gain roles and instead decided to make his own low-budget film. In 1995, he wrote, directed, produced, and starred in the short film Multi-Facial. In 1997, Diesel made his first feature length film Strays, which he also wrote, produced and directed. Director Steven Spielberg took notice of Diesel after seeing him in Multi-Facial and cast him in a small role for his 1998 war epic Saving Private Ryan. Diesel subsequently voiced the titular character in The Iron Giant (1999) while gaining a reputation as an action star after headlining the Fast & Furious, XXX, and The Chronicles of Riddick franchises.",
+          profile_url:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Vin_Diesel_XXX_Return_of_Xander_Cage_premiere.png/800px-Vin_Diesel_XXX_Return_of_Xander_Cage_premiere.png",
+          wiki_url: "https://en.wikipedia.org/wiki/Vin_Diesel",
+        },
+        {
+          id: "A8",
+          first_name: "Eiza",
+          last_name: "González",
+          role_type: "ACTOR",
+          profile_description:
+            "Eiza González Reyna (born 30 January 1990) is a Mexican actress and singer. She gained popularity for her debut role as Lola Valente in the Mexican musical telenovela Lola, érase una vez (2007–2008) and later starred in the lead role of Clara Molina on the Nickelodeon teen drama Sueña conmigo (2010–2011).[2][3]. She gained further success starring as Santanico Pandemonium in the American horror series From Dusk till Dawn: The Series (2014–2016). She is also known for her roles as Monica Darling Castello in the action crime film Baby Driver (2017), Nyssiana in the cyberpunk action film Alita: Battle Angel (2019), Madam M in The Fast and the Furious spin-off film Hobbs & Shaw (2019), Fran in the comedy thriller I Care a Lot (2020), and Maia Simmons in the MonsterVerse film Godzilla vs. Kong (2021)",
+          profile_url:
+            "https://upload.wikimedia.org/wikipedia/commons/0/03/Eiza_Gonzalez_for_Vogue_2021_4.jpg",
+          wiki_url: "https://en.wikipedia.org/wiki/Eiza_Gonz%C3%A1lez",
+        },
+                {
+          id: "A9",
+          first_name: "Benedict",
+          last_name: "Cumberbatch",
+          role_type: "ACTOR",
+          profile_description:
+            "Benedict Timothy Carlton Cumberbatch CBE (born 19 July 1976) is an English actor. Known for his work on screen and stage, he has received various accolades, including a British Academy Television Award, a Primetime Emmy Award and a Laurence Olivier Award, in addition to nominations for two Academy Awards, two British Academy Film Awards and four Golden Globe Awards. In 2014, Time magazine named him one of the 100 most influential people in the world, and in 2015, he was appointed Commander of the Order of the British Empire (CBE).",
+          profile_url:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/BCumberbatch_Comic-Con_2019.jpg/800px-BCumberbatch_Comic-Con_2019.jpg",
+          wiki_url: "https://en.wikipedia.org/wiki/Benedict_Cumberbatch",
+        },
+        {
+          id: "A10",
+          first_name: "Merab",
+          last_name: "Ninidze",
+          role_type: "ACTOR",
+          profile_description:
+            "Merab Ninidze (Georgian: მერაბ ნინიძე; born 3 November 1965) is a Georgian actor. In the English-speaking world, he is best known for the roles of Walter Redlich in Nowhere in Africa and Oleg Penkovsky in The Courier.",
+          profile_url:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Crossing_Europe_2018_-_Merab_Ninidze_-_1977.jpg/1280px-Crossing_Europe_2018_-_Merab_Ninidze_-_1977.jpg",
+          wiki_url: "https://en.wikipedia.org/wiki/Prabhleen_Sandhu",
+        },
+                {
+          id: "A14",
+          first_name: "Dwayne",
+          last_name: "Johnson",
+          role_type: "ACTOR",
+          profile_description:
+            "Dwayne Douglas Johnson (born May 2, 1972), also known by his ring name The Rock,[3] is an American actor, businessman, and former professional wrestler.[6][7] Widely regarded as one of the greatest professional wrestlers of all time,[8][9] he wrestled for WWE for eight years prior to pursuing an acting career. His films have grossed over $3.5 billion in North America and over $10.5 billion worldwide,[10] making him one of the world's highest-grossing and highest-paid actors",
+          profile_url:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Dwayne_Johnson_2014_%28cropped%29.jpg/800px-Dwayne_Johnson_2014_%28cropped%29.jpg",
+          wiki_url: "https://en.wikipedia.org/wiki/Dwayne_Johnson",
+        },
 ];
   
 export default artists;

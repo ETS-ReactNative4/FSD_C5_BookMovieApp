@@ -36,24 +36,16 @@ const Home = () => {
         return false;
       });
     }
-
     if (formValues.artistsList.length > 0) {
       finalFilteredMovieList = finalFilteredMovieList.filter(movie => {
-
         const fullNameArray = [];
         movie.artists.forEach(artist =>
           fullNameArray.push(`${artist.first_name} ${artist.last_name}`)
         );
-        for (let i = 0; i < formValues.artistsList.length; i++) 
-        {
+        for (let i = 0; i < formValues.artistsList.length; i++) {
+
           if (fullNameArray.includes(`${formValues.artistsList[i].first_name} ${formValues.artistsList[i].last_name}`))
-          {
             return true;
-          }
-          else
-          {
-            return false;
-          }
         }
         return false;
       });
